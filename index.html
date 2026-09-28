@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Logistics – Vận Tải, Kho Bãi & Cho Thuê Xe Nâng Container</title>
+    <meta name="description" content="Công ty TNHH HP cung cấp dịch vụ vận tải, kho bãi và cho thuê xe nâng hạ container chuyên nghiệp, uy tín hàng đầu Việt Nam. Giải pháp logistics toàn diện cho doanh nghiệp của bạn.">
+    <meta name="keywords" content="vận tải, kho bãi, cho thuê xe nâng container, logistics, HP, xe nâng hạ container">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo" id="nav-logo-link">
+                <img src="assets/logo-hp.png" alt="Logo Công ty TNHH HP" class="nav-logo-img" id="nav-logo-img">
+                <div class="logo-text">
+                    <span class="logo-main">HP Logistics</span>
+                    <span class="logo-sub">Công ty TNHH HP</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link" id="nav-about">Về chúng tôi</a></li>
+                <li><a href="#services" class="nav-link" id="nav-services">Dịch vụ</a></li>
+                <li><a href="#stats" class="nav-link" id="nav-stats">Thành tựu</a></li>
+                <li><a href="#why-us" class="nav-link" id="nav-why">Tại sao chọn HP</a></li>
+                <li><a href="#contact" class="nav-link" id="nav-contact">Liên hệ</a></li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary nav-cta" id="nav-cta-btn">Liên hệ ngay</a>
+
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="assets/hero_banner.jpg" alt="HP Logistics Hero" class="hero-img" id="hero-bg-img">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" id="particles-container"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-badge" id="hero-badge">
+                <span class="badge-dot"></span>
+                Đối tác logistics tin cậy hàng đầu
+            </div>
+            <h1 class="hero-title" id="hero-title">
+                Giải Pháp<br>
+                <span class="gradient-text">Logistics Toàn Diện</span><br>
+                Cho Doanh Nghiệp
+            </h1>
+            <p class="hero-desc" id="hero-desc">
+                Công ty TNHH HP cung cấp dịch vụ <strong>Vận Tải</strong>, <strong>Kho Bãi</strong>
+                và <strong>Cho Thuê Xe Nâng Hạ Container</strong> chuyên nghiệp –
+                đáp ứng mọi nhu cầu logistics của doanh nghiệp bạn với tốc độ,
+                độ tin cậy và hiệu quả vượt trội.
+            </p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary btn-lg" id="hero-explore-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    Khám phá dịch vụ
+                </a>
+                <a href="#contact" class="btn btn-ghost btn-lg" id="hero-contact-btn">
+                    Nhận báo giá miễn phí
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat" id="hero-stat-1">
+                    <span class="stat-num">500+</span>
+                    <span class="stat-lbl">Khách hàng</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="hero-stat" id="hero-stat-2">
+                    <span class="stat-num">10+</span>
+                    <span class="stat-lbl">Năm kinh nghiệm</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="hero-stat" id="hero-stat-3">
+                    <span class="stat-num">99%</span>
+                    <span class="stat-lbl">Đúng hạn</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator" id="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Cuộn xuống</span>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section-pad" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal" id="about-content">
+                    <div class="section-label">Về Chúng Tôi</div>
+                    <h2 class="section-title">Hơn <span class="gradient-text">10 Năm</span> Kinh Nghiệm Trong Ngành Logistics</h2>
+                    <p class="about-desc">Công ty TNHH HP được thành lập với sứ mệnh mang đến giải pháp vận chuyển và lưu trữ hàng hóa hiệu quả, an toàn và tiết kiệm chi phí nhất cho các doanh nghiệp trên toàn quốc.</p>
+                    <p class="about-desc">Chúng tôi tự hào là đối tác chiến lược của hàng trăm doanh nghiệp, từ các startup đến các tập đoàn lớn, với đội ngũ chuyên nghiệp và hệ thống hạ tầng hiện đại.</p>
+                    <div class="about-features">
+                        <div class="about-feature" id="af-1">
+                            <div class="feature-icon">&#10003;</div>
+                            <span>Đội ngũ chuyên nghiệp, giàu kinh nghiệm</span>
+                        </div>
+                        <div class="about-feature" id="af-2">
+                            <div class="feature-icon">&#10003;</div>
+                            <span>Công nghệ theo dõi hàng hóa thời gian thực</span>
+                        </div>
+                        <div class="about-feature" id="af-3">
+                            <div class="feature-icon">&#10003;</div>
+                            <span>Bảo hiểm hàng hóa toàn diện</span>
+                        </div>
+                        <div class="about-feature" id="af-4">
+                            <div class="feature-icon">&#10003;</div>
+                            <span>Hỗ trợ 24/7, tận tâm chu đáo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal" id="about-visual">
+                    <div class="about-cards-stack">
+                        <div class="about-card about-card-back" id="about-card-back"></div>
+                        <div class="about-card about-card-main" id="about-card-main">
+                            <div class="acard-icon">&#128667;</div>
+                            <h3>Sứ mệnh của chúng tôi</h3>
+                            <p>Kết nối hàng hóa, kết nối cơ hội – mang lại giá trị bền vững cho từng đối tác và khách hàng thông qua dịch vụ logistics đáng tin cậy.</p>
+                            <div class="acard-tags">
+                                <span class="tag">Uy tín</span>
+                                <span class="tag">Chuyên nghiệp</span>
+                                <span class="tag">Tận tâm</span>
+                            </div>
+                        </div>
+                        <div class="about-card about-card-small" id="about-card-small">
+                            <div class="small-card-inner">
+                                <div class="pulse-ring"></div>
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Khách hàng tin tưởng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services section-pad" id="services">
+        <div class="services-bg-glow"></div>
+        <div class="container">
+            <div class="section-header reveal" id="services-header">
+                <div class="section-label">Dịch Vụ</div>
+                <h2 class="section-title">Dịch Vụ <span class="gradient-text">Cốt Lõi</span></h2>
+                <p class="section-subtitle">Giải pháp logistics toàn diện – Vận tải, Kho bãi và Cho thuê xe nâng hạ container, đáp ứng mọi quy mô doanh nghiệp</p>
+            </div>
+
+
+            <!-- Service 1: Van Tai -->
+            <div class="service-block reveal" id="service-transport">
+                <div class="service-image-wrap">
+                    <img src="assets/transport_service.jpg" alt="Dịch vụ Vận Tải HP" class="service-img" id="transport-img">
+                    <div class="service-img-badge" id="transport-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                        Vận Tải
+                    </div>
+                </div>
+                <div class="service-info">
+                    <div class="service-num">01</div>
+                    <h3 class="service-title">Dịch Vụ <span class="gradient-text">Vận Tải</span></h3>
+                    <p class="service-desc">Chúng tôi cung cấp giải pháp vận chuyển hàng hóa toàn quốc với đội xe tải hiện đại, đa dạng tải trọng từ 500kg đến 30 tấn. Đảm bảo hàng hóa được giao đúng hạn, an toàn và nguyên vẹn.</p>
+                    <div class="service-features-grid">
+                        <div class="svc-feat" id="tf-1">
+                            <div class="svc-feat-icon">&#128666;</div>
+                            <div>
+                                <strong>Vận tải đường bộ</strong>
+                                <p>Tải trọng 500kg – 30 tấn, phủ sóng toàn quốc</p>
+                            </div>
+                        </div>
+                        <div class="svc-feat" id="tf-2">
+                            <div class="svc-feat-icon">&#128205;</div>
+                            <div>
+                                <strong>Theo dõi GPS thời gian thực</strong>
+                                <p>Cập nhật vị trí xe liên tục, minh bạch</p>
+                            </div>
+                        </div>
+                        <div class="svc-feat" id="tf-3">
+                            <div class="svc-feat-icon">&#128737;</div>
+                            <div>
+                                <strong>Bảo hiểm hàng hóa</strong>
+                                <p>An tâm tuyệt đối với gói bảo hiểm toàn diện</p>
+                            </div>
+                        </div>
+                        <div class="svc-feat" id="tf-4">
+                            <div class="svc-feat-icon">&#9889;</div>
+                            <div>
+                                <strong>Giao hàng nhanh 24h</strong>
+                                <p>Dịch vụ express cho hàng hóa khẩn cấp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" id="transport-cta">Tìm hiểu thêm</a>
+                </div>
+            </div>
+
+            <!-- Service 2: Kho Bai -->
+            <div class="service-block service-block-reverse reveal" id="service-warehouse">
+                <div class="service-image-wrap">
+                    <img src="assets/warehouse_service.jpg" alt="Dịch vụ Kho Bãi HP" class="service-img" id="warehouse-img">
+                    <div class="service-img-badge service-img-badge-alt" id="warehouse-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        Kho Bãi
+                    </div>
+                </div>
+                <div class="service-info">
+                    <div class="service-num">02</div>
+                    <h3 class="service-title">Dịch Vụ <span class="gradient-text">Kho Bãi</span></h3>
+                    <p class="service-desc">Hệ thống kho bãi hiện đại với diện tích hàng chục nghìn m², trang bị đầy đủ thiết bị bốc dỡ, hệ thống quản lý kho thông minh WMS, đảm bảo hàng hóa được bảo quản tốt nhất.</p>
+                    <div class="service-features-grid">
+                        <div class="svc-feat" id="wf-1">
+                            <div class="svc-feat-icon">&#127981;</div>
+                            <div>
+                                <strong>Kho hiện đại 50.000m²</strong>
+                                <p>Hệ thống giá kệ thông minh, đa tầng</p>
+                            </div>
+                        </div>
+                        <div class="svc-feat" id="wf-2">
+                            <div class="svc-feat-icon">&#127777;</div>
+                            <div>
+                                <strong>Kho lạnh – nhiệt độ kiểm soát</strong>
+                                <p>Bảo quản thực phẩm, dược phẩm chuyên biệt</p>
+                            </div>
+                        </div>
+                        <div class="svc-feat" id="wf-3">
+                            <div class="svc-feat-icon">&#128230;</div>
+                            <div>
+                                <strong>Quản lý kho WMS</strong>
+                                <p>Phần mềm quản lý kho thông minh, cập nhật tức thời</p>
+                            </div>
+                        </div>
+                        <div class="svc-feat" id="wf-4">
+                            <div class="svc-feat-icon">&#128274;</div>
+                            <div>
+                                <strong>An ninh 24/7</strong>
+                                <p>Camera giám sát, bảo vệ 24/7 toàn khu vực kho</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" id="warehouse-cta">Tìm hiểu thêm</a>
+                </div>
+            </div>
+
+            <!-- Service 3: Cho Thue Xe Nang -->
+            <div class="service-block reveal" id="service-forklift">
+                <div class="service-image-wrap">
+                    <img src="assets/forklift_service.jpg" alt="Dịch vụ Cho Thuê Xe Nâng HP" class="service-img" id="forklift-img">
+                    <div class="service-img-badge service-img-badge-green" id="forklift-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+                        Xe Nâng Container
+                    </div>
+                </div>
+                <div class="service-info">
+                    <div class="service-num">03</div>
+                    <h3 class="service-title">Cho Thuê <span class="gradient-text-green">Xe Nâng Hạ Container</span></h3>
+                    <p class="service-desc">Đội xe nâng hạ container chuyên dụng, tải trọng từ 3 tấn đến 45 tấn, phục vụ bốc xếp container tại cảng, kho bãi, nhà máy và khu công nghiệp. Vận hành bởi tài xế được đào tạo chuyên nghiệp, đảm bảo an toàn tuyệt đối.</p>
+                    <div class="service-features-grid">
+                        <div class="svc-feat" id="ff-1">
+                            <div class="svc-feat-icon">&#128736;</div>
+                            <div>
+                                <strong>Đa dạng tải trọng</strong>
+                                <p>Xe nâng 3T – 45T, phù hợp mọi loại container 20ft & 40ft</p>
+                            </div>
+                        </div>
+                        <div class="svc-feat" id="ff-2">
+                            <div class="svc-feat-icon">&#128198;</div>
+                            <div>
+                                <strong>Cho thuê linh hoạt</strong>
+                                <p>Thuê theo ca, ngày, tháng hoặc hợp đồng dài hạn</p>
+                            </div>
+                        </div>
+                        <div class="svc-feat" id="ff-3">
+                            <div class="svc-feat-icon">&#128084;</div>
+                            <div>
+                                <strong>Tài xế chuyên nghiệp</strong>
+                                <p>100% tài xế có chứng chỉ vận hành xe nâng hợp lệ</p>
+                            </div>
+                        </div>
+                        <div class="svc-feat" id="ff-4">
+                            <div class="svc-feat-icon">&#128295;</div>
+                            <div>
+                                <strong>Bảo trì & hỗ trợ 24/7</strong>
+                                <p>Đội kỹ thuật sẵn sàng xử lý sự cố nhanh chóng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary-green" id="forklift-cta">Tìm hiểu thêm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats-section section-pad" id="stats">
+        <div class="stats-bg"></div>
+        <div class="container">
+            <div class="section-header reveal" id="stats-header">
+                <div class="section-label">Thành Tựu</div>
+                <h2 class="section-title">Những Con Số <span class="gradient-text">Nói Lên Tất Cả</span></h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card reveal" id="stat-card-1">
+                    <div class="stat-icon">&#128667;</div>
+                    <div class="stat-value" data-target="150" id="sc-trucks">0</div>
+                    <div class="stat-unit">+</div>
+                    <div class="stat-name">Đầu xe tải</div>
+                    <div class="stat-desc">Đội xe hiện đại, đa dạng tải trọng</div>
+                </div>
+                <div class="stat-card reveal" id="stat-card-2">
+                    <div class="stat-icon">&#127981;</div>
+                    <div class="stat-value" data-target="50" id="sc-warehouse">0</div>
+                    <div class="stat-unit">K m²</div>
+                    <div class="stat-name">Diện tích kho</div>
+                    <div class="stat-desc">Hệ thống kho bãi trải rộng toàn quốc</div>
+                </div>
+                <div class="stat-card reveal" id="stat-card-3">
+                    <div class="stat-icon">&#129309;</div>
+                    <div class="stat-value" data-target="500" id="sc-clients">0</div>
+                    <div class="stat-unit">+</div>
+                    <div class="stat-name">Khách hàng</div>
+                    <div class="stat-desc">Doanh nghiệp tin tưởng hợp tác</div>
+                </div>
+                <div class="stat-card reveal" id="stat-card-4">
+                    <div class="stat-icon">&#128230;</div>
+                    <div class="stat-value" data-target="1" id="sc-orders">0</div>
+                    <div class="stat-unit">Tr+</div>
+                    <div class="stat-name">Đơn hàng</div>
+                    <div class="stat-desc">Được xử lý thành công mỗi năm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY US ========== -->
+    <section class="why-us section-pad" id="why-us">
+        <div class="container">
+            <div class="section-header reveal" id="why-header">
+                <div class="section-label">Lợi Thế Cạnh Tranh</div>
+                <h2 class="section-title">Tại Sao Chọn <span class="gradient-text">HP Logistics?</span></h2>
+                <p class="section-subtitle">Chúng tôi không chỉ cung cấp dịch vụ – chúng tôi kiến tạo giải pháp</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal" id="wc-1">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon">&#127942;</div>
+                    </div>
+                    <h4>Uy tín hàng đầu</h4>
+                    <p>Hơn 10 năm xây dựng uy tín, được khách hàng bình chọn là đối tác logistics tin cậy hàng đầu.</p>
+                </div>
+                <div class="why-card reveal" id="wc-2">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon">&#9889;</div>
+                    </div>
+                    <h4>Tốc độ vượt trội</h4>
+                    <p>Quy trình xử lý nhanh chóng, giao hàng đúng hẹn với tỷ lệ 99% đảm bảo cam kết.</p>
+                </div>
+                <div class="why-card reveal" id="wc-3">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon">&#128161;</div>
+                    </div>
+                    <h4>Công nghệ tiên tiến</h4>
+                    <p>Ứng dụng công nghệ GPS, WMS hiện đại giúp theo dõi hàng hóa mọi lúc mọi nơi.</p>
+                </div>
+                <div class="why-card reveal" id="wc-4">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon">&#128176;</div>
+                    </div>
+                    <h4>Giá cạnh tranh</h4>
+                    <p>Báo giá minh bạch, cạnh tranh, không phát sinh chi phí ẩn. Tối ưu ngân sách logistics.</p>
+                </div>
+                <div class="why-card reveal" id="wc-5">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon">&#127758;</div>
+                    </div>
+                    <h4>Phủ sóng toàn quốc</h4>
+                    <p>Mạng lưới đối tác rộng khắp 63 tỉnh thành, đảm bảo phủ sóng mọi địa điểm trên toàn Việt Nam.</p>
+                </div>
+                <div class="why-card reveal" id="wc-6">
+                    <div class="why-icon-wrap">
+                        <div class="why-icon">&#127919;</div>
+                    </div>
+                    <h4>Giải pháp tùy chỉnh</h4>
+                    <p>Thiết kế giải pháp logistics riêng biệt phù hợp với đặc thù và quy mô của từng doanh nghiệp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials section-pad" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal" id="test-header">
+                <div class="section-label">Đánh Giá</div>
+                <h2 class="section-title">Khách Hàng <span class="gradient-text">Nói Gì Về Chúng Tôi?</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal" id="tc-1">
+                    <div class="test-quote">"</div>
+                    <p>Dịch vụ vận tải của HP thực sự xuất sắc. Hàng hóa luôn được giao đúng hẹn, nhân viên nhiệt tình và chuyên nghiệp. Chúng tôi đã hợp tác được 3 năm và không có lý do gì để thay đổi.</p>
+                    <div class="test-author">
+                        <div class="test-avatar" id="avatar-1">NV</div>
+                        <div>
+                            <strong>Nguyễn Văn Hùng</strong>
+                            <span>Giám đốc – Cty XNK Phương Nam</span>
+                        </div>
+                    </div>
+                    <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+                <div class="testimonial-card reveal" id="tc-2">
+                    <div class="test-quote">"</div>
+                    <p>Kho bãi của HP rất hiện đại, sạch sẽ và an toàn. Hệ thống quản lý kho WMS cho phép chúng tôi theo dõi hàng hóa mọi lúc. Đây là giải pháp lưu kho tốt nhất chúng tôi từng sử dụng.</p>
+                    <div class="test-author">
+                        <div class="test-avatar" id="avatar-2">TL</div>
+                        <div>
+                            <strong>Trần Thị Lan Anh</strong>
+                            <span>CEO – Thời Trang Mekong Fashion</span>
+                        </div>
+                    </div>
+                    <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+                <div class="testimonial-card reveal" id="tc-3">
+                    <div class="test-quote">"</div>
+                    <p>Giá cả hợp lý, dịch vụ chất lượng cao, hỗ trợ khách hàng 24/7 rất tận tình. HP Logistics đã giúp chúng tôi tối ưu chi phí logistics lên đến 30% so với trước đây.</p>
+                    <div class="test-author">
+                        <div class="test-avatar" id="avatar-3">PD</div>
+                        <div>
+                            <strong>Phạm Minh Đức</strong>
+                            <span>COO – Tập đoàn Sản Xuất ABC</span>
+                        </div>
+                    </div>
+                    <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section-pad" id="contact">
+        <div class="contact-bg-glow"></div>
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal" id="contact-info">
+                    <div class="section-label">Liên Hệ</div>
+                    <h2 class="section-title">Bắt Đầu Hợp Tác <span class="gradient-text">Ngay Hôm Nay</span></h2>
+                    <p class="contact-desc">Liên hệ với chúng tôi để nhận tư vấn miễn phí và báo giá tốt nhất cho nhu cầu logistics của bạn.</p>
+
+                    <div class="contact-items">
+                        <div class="contact-item" id="ci-phone">
+                            <div class="ci-icon">&#128222;</div>
+                            <div>
+                                <strong>Điện thoại</strong>
+                                <a href="tel:+84901234567">0901 234 567</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" id="ci-email">
+                            <div class="ci-icon">&#9993;</div>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:info@hplogistics.vn">info@hplogistics.vn</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" id="ci-address">
+                            <div class="ci-icon">&#128205;</div>
+                            <div>
+                                <strong>Địa chỉ</strong>
+                                <span>123 Đường Logistics, KCN Bình Dương, Việt Nam</span>
+                            </div>
+                        </div>
+                        <div class="contact-item" id="ci-hours">
+                            <div class="ci-icon">&#128336;</div>
+                            <div>
+                                <strong>Giờ làm việc</strong>
+                                <span>Thứ 2 – Thứ 7: 7:30 – 17:30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap reveal" id="contact-form-wrap">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <h3>Gửi Yêu Cầu Báo Giá</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Họ và tên *</label>
+                                <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0901 234 567" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Dịch vụ quan tâm *</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Chọn dịch vụ --</option>
+                                <option value="transport">Dịch vụ Vận Tải</option>
+                                <option value="warehouse">Dịch vụ Kho Bãi</option>
+                                <option value="forklift">Cho Thuê Xe Nâng Hạ Container</option>
+                                <option value="all">Tất cả dịch vụ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nội dung yêu cầu</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Mô tả nhu cầu logistics của bạn..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span id="btn-text">Gửi Yêu Cầu Ngay</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                        <div class="form-success" id="form-success">
+                            Yeu cau da duoc gui thanh cong! Chung toi se lien he trong vong 24 gio.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand" id="footer-brand">
+                    <div class="nav-logo footer-logo">
+                        <img src="assets/logo-hp.png" alt="Logo Công ty TNHH HP" class="footer-logo-img" id="footer-logo-img">
+                        <div class="logo-text">
+                            <span class="logo-main">HP Logistics</span>
+                            <span class="logo-sub">Công ty TNHH HP</span>
+                        </div>
+                    </div>
+                    <p>Đối tác logistics tin cậy của hàng trăm doanh nghiệp trên khắp Việt Nam. Chúng tôi cam kết mang đến dịch vụ tốt nhất.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" id="social-fb" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" id="social-zalo" aria-label="Zalo">Z</a>
+                        <a href="#" class="social-link" id="social-yt" aria-label="YouTube">Y</a>
+                    </div>
+                </div>
+                <div class="footer-col" id="footer-services-col">
+                    <h4>Dịch Vụ</h4>
+                    <ul>
+                        <li><a href="#service-transport">Vận tải đường bộ</a></li>
+                        <li><a href="#service-transport">Vận tải nội thành</a></li>
+                        <li><a href="#service-warehouse">Kho lưu trữ</a></li>
+                        <li><a href="#service-warehouse">Kho lạnh</a></li>
+                        <li><a href="#service-forklift">Cho thuê xe nâng container</a></li>
+                        <li><a href="#contact">Tư vấn miễn phí</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="footer-links-col">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#services">Dịch vụ</a></li>
+                        <li><a href="#stats">Thành tựu</a></li>
+                        <li><a href="#why-us">Tại sao chọn HP</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="footer-contact-col">
+                    <h4>Liên Hệ</h4>
+                    <ul>
+                        <li><a href="tel:+84901234567">0901 234 567</a></li>
+                        <li><a href="mailto:info@hplogistics.vn">info@hplogistics.vn</a></li>
+                        <li>123 Đường Logistics, KCN Bình Dương</li>
+                        <li>Thứ 2 – Thứ 7: 7:30 – 17:30</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Công ty TNHH HP. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="admin/login.html" id="admin-link" style="opacity:0.4; font-size:0.75rem;">⚙ Admin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <a href="tel:+84901234567" class="floating-cta" id="floating-cta" aria-label="Gọi ngay">
+        <div class="floating-pulse"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+
+    <script src="main.js"></script>
+
+    <!-- Đồng bộ nội dung từ Admin Dashboard (Server API) -->
+    <script>
+    (function() {
+        function applyContent(d) {
+            if (!d) return;
+
+            const heroTitle = document.getElementById('hero-title');
+            if (heroTitle && d.slogan) heroTitle.innerHTML = d.slogan;
+
+            const heroDesc = document.getElementById('hero-desc');
+            if (heroDesc && d.desc) heroDesc.textContent = d.desc;
+
+            const ciPhone = document.getElementById('ci-phone');
+            if (ciPhone && d.phone) {
+                const a = ciPhone.querySelector('a');
+                if (a) { a.textContent = d.phone; a.href = 'tel:+84' + d.phone.replace(/\D/g,'').replace(/^0/,''); }
+            }
+
+            const ciEmail = document.getElementById('ci-email');
+            if (ciEmail && d.email) {
+                const a = ciEmail.querySelector('a');
+                if (a) { a.textContent = d.email; a.href = 'mailto:' + d.email; }
+            }
+
+            const ciAddress = document.getElementById('ci-address');
+            if (ciAddress && d.address) {
+                const s = ciAddress.querySelector('span');
+                if (s) s.textContent = d.address;
+            }
+
+            const ciHours = document.getElementById('ci-hours');
+            if (ciHours && d.hours) {
+                const s = ciHours.querySelector('span');
+                if (s) s.textContent = d.hours;
+            }
+
+            // Dịch vụ
+            const els = [
+                ['#service-transport .service-title', d.tTitle],
+                ['#service-transport .service-desc',  d.tDesc],
+                ['#service-warehouse .service-title', d.wTitle],
+                ['#service-warehouse .service-desc',  d.wDesc],
+                ['#service-forklift .service-title',  d.fTitle],
+                ['#service-forklift .service-desc',   d.fDesc],
+            ];
+            els.forEach(([sel, val]) => {
+                if (!val) return;
+                const el = document.querySelector(sel);
+                if (el) el.innerHTML = val;
+            });
+
+            // Floating CTA phone
+            const cta = document.getElementById('floating-cta');
+            if (cta && d.phone) cta.href = 'tel:+84' + d.phone.replace(/\D/g,'').replace(/^0/,'');
+
+            // Footer links
+            document.querySelectorAll('.footer-contact a').forEach(a => {
+                if (a.href.includes('tel:') && d.phone) {
+                    a.textContent = d.phone;
+                    a.href = 'tel:+84' + d.phone.replace(/\D/g,'').replace(/^0/,'');
+                }
+                if (a.href.includes('mailto:') && d.email) {
+                    a.textContent = d.email;
+                    a.href = 'mailto:' + d.email;
+                }
+            });
+        }
+
+        // Thử load từ server trước, fallback về localStorage
+        fetch('/api/content')
+            .then(r => r.json())
+            .then(res => {
+                if (res.ok && res.data) {
+                    applyContent(res.data);
+                    localStorage.setItem('hp_site_content', JSON.stringify(res.data)); // sync cache
+                }
+            })
+            .catch(() => {
+                // Server chưa chạy → dùng localStorage cache
+                const cached = JSON.parse(localStorage.getItem('hp_site_content') || 'null');
+                if (cached) applyContent(cached);
+            });
+    })();
+    </script>
+</body>
+
+
+</html>
+
+
