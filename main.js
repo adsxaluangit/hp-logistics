@@ -225,4 +225,28 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transitionDelay = `${i * 0.1}s`;
     });
 
+    // ─── Scroll Progress Bar (Animate UI) ────────
+    const progressBar = document.getElementById('scroll-progress-bar');
+    window.addEventListener('scroll', () => {
+        if (progressBar) {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progressBar.style.width = `${progress}%`;
+        }
+    }, { passive: true });
+
+    // ─── Interactive Card Spotlight (Animate UI) ──
+    const spotlightCards = document.querySelectorAll('.spotlight-card, .stat-card, .why-card, .testimonial-card, .about-card-main');
+    spotlightCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
+
 });
+

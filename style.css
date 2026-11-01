@@ -92,11 +92,58 @@ ul { list-style: none; }
     max-width: 580px;
 }
 
+/* --- Scroll Progress Bar (Animate UI) --- */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #1E6FFF 0%, #00D4FF 50%, #FF6B35 100%);
+    z-index: 99999;
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.8);
+    pointer-events: none;
+    transition: width 0.08s linear;
+}
+
+/* --- Text Shimmer / Shiny Text (Animate UI) --- */
 .gradient-text {
-    background: var(--gradient-main);
+    background: linear-gradient(
+        110deg,
+        #1E6FFF 0%,
+        #00D4FF 30%,
+        #FFFFFF 50%,
+        #00D4FF 70%,
+        #1E6FFF 100%
+    );
+    background-size: 250% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: textShimmer 6s ease-in-out infinite;
+    display: inline-block;
+}
+
+.gradient-text-green {
+    background: linear-gradient(
+        110deg,
+        #10B981 0%,
+        #34D399 30%,
+        #FFFFFF 50%,
+        #34D399 70%,
+        #10B981 100%
+    );
+    background-size: 250% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textShimmer 6s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes textShimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
 }
 
 .section-header {
@@ -351,19 +398,49 @@ ul { list-style: none; }
 }
 
 .hero-badge {
+    position: relative;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background: rgba(30, 111, 255, 0.15);
-    border: 1px solid rgba(30, 111, 255, 0.3);
+    gap: 10px;
+    padding: 8px 20px;
+    background: rgba(13, 20, 37, 0.85);
     border-radius: 50px;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--accent);
     margin-bottom: 24px;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(30, 111, 255, 0.25);
+    overflow: hidden;
     animation: fadeInDown 0.8s ease;
+    border: 1px solid rgba(0, 212, 255, 0.35);
+    z-index: 1;
+}
+
+.hero-badge::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent 0deg, rgba(0, 212, 255, 0.9) 60deg, transparent 120deg);
+    animation: borderBeamRotate 4s linear infinite;
+    z-index: -2;
+}
+
+.hero-badge::after {
+    content: '';
+    position: absolute;
+    inset: 1.5px;
+    background: rgba(10, 16, 32, 0.94);
+    border-radius: 50px;
+    z-index: -1;
+}
+
+@keyframes borderBeamRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .badge-dot {
@@ -477,6 +554,154 @@ ul { list-style: none; }
 @keyframes scrollWheel {
     0%, 100% { transform: translateY(0); opacity: 1; }
     50% { transform: translateY(8px); opacity: 0.4; }
+}
+
+/* =============================================
+   PARTNERS MARQUEE (Animate UI)
+   ============================================= */
+.marquee-section {
+    padding: 36px 0 44px 0;
+    background: linear-gradient(180deg, var(--dark) 0%, rgba(13, 20, 37, 0.7) 50%, var(--dark-2) 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.marquee-intro {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.marquee-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent);
+    padding: 4px 14px;
+    background: rgba(0, 212, 255, 0.08);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.marquee-sub {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.marquee-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.marquee-fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 140px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.marquee-fade-left {
+    left: 0;
+    background: linear-gradient(to right, var(--dark-2), transparent);
+}
+
+.marquee-fade-right {
+    right: 0;
+    background: linear-gradient(to left, var(--dark-2), transparent);
+}
+
+.marquee-track {
+    display: flex;
+    gap: 18px;
+    width: max-content;
+    animation: marqueeScroll 40s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px 22px;
+    border-radius: 50px;
+    color: var(--text-primary);
+    font-size: 0.92rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: var(--transition);
+    cursor: default;
+    backdrop-filter: blur(8px);
+}
+
+.marquee-item:hover {
+    background: rgba(30, 111, 255, 0.18);
+    border-color: rgba(0, 212, 255, 0.45);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.2);
+    color: var(--white);
+}
+
+.marquee-item .m-icon {
+    font-size: 1.15rem;
+}
+
+/* =============================================
+   SPOTLIGHT EFFECT (Animate UI)
+   ============================================= */
+.spotlight-card,
+.stat-card,
+.why-card,
+.testimonial-card,
+.about-card-main {
+    position: relative;
+    overflow: hidden;
+}
+
+.spotlight-card::before,
+.stat-card::before,
+.why-card::before,
+.testimonial-card::before,
+.about-card-main::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+        420px circle at var(--mouse-x, -500px) var(--mouse-y, -500px),
+        rgba(0, 212, 255, 0.16),
+        transparent 65%
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.spotlight-card:hover::before,
+.stat-card:hover::before,
+.why-card:hover::before,
+.testimonial-card:hover::before,
+.about-card-main:hover::before {
+    opacity: 1;
 }
 
 /* =============================================

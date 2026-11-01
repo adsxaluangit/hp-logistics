@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3001; // Railway tự set PORT
+const PORT = process.env.PORT || 3005; // Railway tự set PORT khi deploy, local dùng 3005
 
 // Thư mục data – trên Railway dùng /data (volume), local dùng ./data
 const DATA_DIR = process.env.DATA_DIR
